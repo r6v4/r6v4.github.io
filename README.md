@@ -14,6 +14,7 @@ email-0:linshunzhi@vip.163.com
 
 ```
 
+```text
 first need to #sudo sh configure.sh when you are first time run on your system
 second run the binary file h1d1-2026-09-09 (linux>=5.4 and glibc>=2.27)
 with some options, 
@@ -79,7 +80,8 @@ Some notes:
     --key, in the case of certificate encryption, 
         need to enter the certificate password in the terminal after the service is started.
     It is currently unable to connect normally with openssl related libraries.
-
+```
+```text
 Each h1d1 service sends a time stamp to a specified location 
 through lmdb's shared memory every 0.2 seconds to indicate survival. 
 Any process in the system can check this time stamp 
@@ -110,7 +112,8 @@ Host: your-host-name\r\n
 Content-Length: body-length\r\n
 X-Password: your-password\r\n
 \r\n
-
+```
+```text
 for kvdb api http body: (<=16KB)
 kvdb-part provides on-disk and on-memory interfaces
 on-disk by rocksdb  use box set get del
@@ -164,7 +167,8 @@ test not pass on some client, maybe they ignore \r\n in end of post
 when get the value is nil
 Content-Length: 0
 http body is ""
-
+```
+```text
 in user conf file:
 token1 permission-set1
 token2 permission-set2
@@ -187,7 +191,8 @@ these example need to install lisp-runtime quicklisp and libuv-devel (libuv1-dev
 this is the node api of h1d1 server, each vcpu has one thread, 
 each thread has one connection which links to one of nodes
 when node server is busy, send and recv will be unclear, so need many node server
-
+```
+```text
 news:
 1.Fixed a node part session sequence conflict issue in version 0213 (20260214).
 2.Added recognition and handling for UTF-8 URLs (20260906).
@@ -200,3 +205,4 @@ hint:
 3. The software is still imperfect, 
     and some features will crash during stress testing.
 4. vcpu64.so vpu affitify is drump.
+```
