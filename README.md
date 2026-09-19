@@ -5,12 +5,12 @@ email-0:linshunzhi@vip.163.com
 ## h1d1 (http1.1 server powered by common-lisp)
 
 ```common-lisp
-;;version:20260909(amd64)(v0.9.9)
-;;md5:baf7e68cd9ee0a12b352958fe2ec485a
+;;version:20260919(amd64)(v1.0)
+;;md5:e78096314b1cd53e2c7350a43b43728e
 ;;runtime:linux>=5.4.0,ldd>=2.27
-;;github:https://github.com/r6v4/h1d1/releases/download/20260909/h1d1-2026-09-09_x86-64_linux5-ldd227_gencgc.7z
-;;proton:https://drive.proton.me/urls/1TZKA9M7E4#81E6kQU2NfAc
-;;lanzou:https://linshunzhi.lanzoub.com/igJ0v47ifqxe
+;;github:https://github.com/r6v4/h1d1/releases/download/20260919/h1d1-2026-09-19_x86-64_linux5-ldd227_gencgc.7z
+;;proton:https://drive.proton.me/urls/2XPJAPPFRM#5l5w8qJlYaPJ
+;;lanzou:https://linshunzhi.lanzoub.com/ioLaW493jdsh
 
 ```
 
@@ -119,7 +119,12 @@ kvdb-part provides on-disk and on-memory interfaces
 on-disk by rocksdb  use box set get del
 on-memory by lmdb   use let put see rem
     
-    box path ;to init a kvdb named path by open file or new
+    box path ;to init a kvdb na;;version:20260919(amd64)(v1.0)
+;;md5:e78096314b1cd53e2c7350a43b43728e
+;;runtime:linux>=5.4.0,ldd>=2.27
+;;github:https://github.com/r6v4/h1d1/releases/download/20260919/h1d1-2026-09-19_x86-64_linux5-ldd227_gencgc.7z
+;;proton:https://drive.proton.me/urls/2XPJAPPFRM#5l5w8qJlYaPJ
+;;lanzou:https://linshunzhi.lanzoub.com/ioLaW493jdshmed path by open file or new
         send-example:box path \r\n
         send-length:11
         back-example:path
@@ -132,7 +137,12 @@ on-memory by lmdb   use let put see rem
         back-length:3
     
     get path key-length ;to get the value of the key
-        send-example:get path 3 \r\nKey
+        send-example:get path 3;;version:20260919(amd64)(v1.0)
+;;md5:e78096314b1cd53e2c7350a43b43728e
+;;runtime:linux>=5.4.0,ldd>=2.27
+;;github:https://github.com/r6v4/h1d1/releases/download/20260919/h1d1-2026-09-19_x86-64_linux5-ldd227_gencgc.7z
+;;proton:https://drive.proton.me/urls/2XPJAPPFRM#5l5w8qJlYaPJ
+;;lanzou:https://linshunzhi.lanzoub.com/ioLaW493jdsh \r\nKey
         send-length:16
         back-example:Value
         back-length:5
@@ -197,6 +207,7 @@ news:
 1.Fixed a node part session sequence conflict issue in version 0213 (20260214).
 2.Added recognition and handling for UTF-8 URLs (20260906).
 3.Fixed --list option, the code typos for permissions have been resolved.(20260909).
+4.Verison 1.0 . (20260919).
 
 hint:
 1. The total length of http messages does not exceed 128KB, 
