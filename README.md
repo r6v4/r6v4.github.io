@@ -132,7 +132,7 @@ on-memory by lmdb   use let put see rem
         back-length:3
     
     get path key-length ;to get the value of the key
-        send-example:get path 3\r\nKey
+        send-example:get path 3 \r\nKey
         send-length:16
         back-example:Value
         back-length:5
