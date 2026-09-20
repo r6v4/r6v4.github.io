@@ -119,12 +119,7 @@ kvdb-part provides on-disk and on-memory interfaces
 on-disk by rocksdb  use box set get del
 on-memory by lmdb   use let put see rem
     
-    box path ;to init a kvdb na;;version:20260919(amd64)(v1.0)
-;;md5:e78096314b1cd53e2c7350a43b43728e
-;;runtime:linux>=5.4.0,ldd>=2.27
-;;github:https://github.com/r6v4/h1d1/releases/download/20260919/h1d1-2026-09-19_x86-64_linux5-ldd227_gencgc.7z
-;;proton:https://drive.proton.me/urls/2XPJAPPFRM#5l5w8qJlYaPJ
-;;lanzou:https://linshunzhi.lanzoub.com/ioLaW493jdshmed path by open file or new
+    box path ;to init a kvdb
         send-example:box path \r\n
         send-length:11
         back-example:path
@@ -137,12 +132,7 @@ on-memory by lmdb   use let put see rem
         back-length:3
     
     get path key-length ;to get the value of the key
-        send-example:get path 3;;version:20260919(amd64)(v1.0)
-;;md5:e78096314b1cd53e2c7350a43b43728e
-;;runtime:linux>=5.4.0,ldd>=2.27
-;;github:https://github.com/r6v4/h1d1/releases/download/20260919/h1d1-2026-09-19_x86-64_linux5-ldd227_gencgc.7z
-;;proton:https://drive.proton.me/urls/2XPJAPPFRM#5l5w8qJlYaPJ
-;;lanzou:https://linshunzhi.lanzoub.com/ioLaW493jdsh \r\nKey
+        send-example:get path 3\r\nKey
         send-length:16
         back-example:Value
         back-length:5
