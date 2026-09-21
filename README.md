@@ -16,7 +16,7 @@ email-0:linshunzhi@vip.163.com
 
 ```text
 first need to #sudo sh configure.sh when you are first time run on your system
-second run the binary file h1d1-2026-09-09 (linux>=5.4 and glibc>=2.27)
+second run the binary file h1d1-2026-09-19 (linux>=5.4 and glibc>=2.27)
 with some options, 
     * is alway have, 
     + is when need, 
@@ -197,7 +197,7 @@ news:
 1.Fixed a node part session sequence conflict issue in version 0213 (20260214).
 2.Added recognition and handling for UTF-8 URLs (20260906).
 3.Fixed --list option, the code typos for permissions have been resolved.(20260909).
-4.Verison 1.0 . (20260919).
+4.Version 1.0 . fix url not found cache. (20260919).
 
 hint:
 1. The total length of http messages does not exceed 128KB, 
